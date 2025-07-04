@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SkyNova Airlines</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://wallpaperaccess.com/full/254381.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(0, 0, 50, 0.7);
+      z-index: -1;
+    }
+
+    .navbar-custom {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px 30px;
+    }
+
+    .navbar-brand {
+      color: #ffc107 !important;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+
+    .nav-link {
+      color: white !important;
+      font-weight: 500;
+      margin-left: 20px;
+    }
+
+    .nav-link:hover {
+      color: #ffc107 !important;
+    }
+
+    .card-section {
+      padding: 120px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      min-height: 100vh;
+      align-items: center;
+    }
+
+    .custom-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 30px 20px;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      min-width: 300px;
+      width: 320px;
+      height: 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .custom-card h4 {
+      margin-bottom: 20px;
+      color: #ffc107;
+      font-size: 1.5rem;
+    }
+
+    .btn-grey {
+      background-color: #dee2e6;
+      color: #000;
+      font-weight: 600;
+      border-radius: 30px;
+      padding: 10px 25px;
+      border: none;
+      margin: 8px 0;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-grey:hover {
+      background-color: #ced4da;
+    }
+
+    .about-section {
+      padding: 100px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(10px);
+      text-align: center;
+      color: white;
+    }
+
+    .about-section h2 {
+      color: #ffc107;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.7;
+    }
+
+    .about-icons {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .about-icons i {
+      font-size: 2.5rem;
+      color: #ffc107;
+    }
+
+    .about-icons p {
+      margin-top: 10px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">SKYNOVA AIRLINES</a>
+    <div class="ms-auto">
+      <a class="nav-link" href="#home">Home</a>
+      <a class="nav-link" href="#about">About Us</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Home / Card Section -->
+<section id="home" class="card-section">
+  <!-- Passenger Card -->
+  <div class="custom-card">
+    <h4>Passenger</h4>
+    <a href="passenger-login" class="btn btn-grey">Passenger Login</a>
+    <a href="passenger-register" class="btn btn-grey">Passenger Register</a>
+  </div>
+
+  <!-- Admin Card -->
+  <div class="custom-card">
+    <h4>Admin</h4>
+    <a href="admin-login" class="btn btn-grey">Admin Login</a>
+    <div style="height: 48px;"></div> <!-- Spacing to match Passenger -->
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+  <h2><i class="bi bi-info-circle me-2"></i>About SkyNova Airlines</h2>
+  <p>
+    Welcome to SkyNova Airlines – where comfort meets the sky. Our mission is to provide passengers with a seamless travel experience, affordable pricing, and best-in-class service. Whether you're flying for business or leisure, we ensure a journey that’s safe, punctual, and luxurious.
+  </p>
+
+  <div class="about-icons mt-5">
+    <div>
+      <i class="bi bi-airplane-engines"></i>
+      <p>Modern Fleet</p>
+    </div>
+    <div>
+      <i class="bi bi-people-fill"></i>
+      <p>Trusted by Thousands</p>
+    </div>
+    <div>
+      <i class="bi bi-clock-history"></i>
+      <p>24/7 Support</p>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
