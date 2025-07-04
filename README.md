@@ -87,8 +87,3 @@ The Airline Management System (SkyNova) is a full-stack web application built us
 - Cards and buttons styled for a professional look
 - Navigation bar with clear module links
 
----
-
-## How to Run the Project
-
-1. Clone the repository:
