@@ -87,3 +87,60 @@ The Airline Management System (SkyNova) is a full-stack web application built us
 - Cards and buttons styled for a professional look
 - Navigation bar with clear module links
 
+---
+
+## Steps to Run the Project Locally
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/airline-management-system.git
+   ```
+
+2. **Open the project in your IDE**
+   - Use Eclipse or IntelliJ IDEA
+   - Import the project as a **Maven Project**
+
+3. **Install dependencies**
+   - IntelliJ: Maven dependencies will auto-download
+   - Eclipse: Right-click the project → Maven → Update Project
+
+4. **Create the MySQL database**
+   Open MySQL and run the following command:
+   ```sql
+   CREATE DATABASE airline_db;
+   ```
+
+5. **Update database configuration**
+
+   File path: `src/main/resources/application.properties`
+
+   ```properties
+   spring.datasource.url=jdbc:mysql://localhost:3306/airline_db
+   spring.datasource.username=your_mysql_username
+   spring.datasource.password=your_mysql_password
+
+   spring.jpa.hibernate.ddl-auto=update
+   spring.jpa.show-sql=true
+   spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+   ```
+
+6. **Run the Spring Boot application**
+   - Open the main class: `AirlineManagementSystemApplication.java`
+   - Right-click → Run As → Java Application
+
+7. **Open the browser and access the application**
+   ```
+   http://localhost:8080
+   ```
+
+8. **Test the application**
+   - Register as a passenger and book flights
+   - Login as admin to manage flights, view bookings, and passengers
+
+### Optional: Default Admin Credentials (for testing)
+
+```txt
+Username: admin  
+Password: admin123
+```
+
